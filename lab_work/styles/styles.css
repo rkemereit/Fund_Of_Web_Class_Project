@@ -1,0 +1,349 @@
+/*
+Author: Mark W. Bromwich III
+Date: 20231012
+Version: 1.0.1
+Website: Best Hardware
+*/
+
+* {
+    font-family: helvetica, Georgia, arial;
+    color: #000;
+    font-size: 16px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header.flex-container > div {
+
+    margin: 3px;
+}
+
+.logo {
+    flex-grow: 1;
+    background-image: url('../images/hardware_logo_2.PNG');
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+
+}
+
+.banner_titles {
+    flex-grow: 2;
+}
+
+h1 {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 3px rgba(204, 73, 73, .70);
+}
+
+hr {
+    border: 1px solid rgba(204, 73, 73, .70);
+    background-color: rgba(204, 73, 73, .70);
+    width: 80%;
+    position: relative;
+        left: -10%;
+}
+
+
+.banner_search {
+    flex-grow: 1;
+    padding-top: 3%;
+}
+
+.nav_menu {
+    background-color: rgb(204, 73, 73);
+    width: 100%;
+}
+
+
+.main_nav {
+    background-color: rgb(204, 73, 73);
+    width: 80%;
+    height: 51px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.carousel {
+    width: 80%;
+    margin: 2% auto;
+    min-height: 530px;
+    z-index: 1;
+}
+
+div.carousel > div {
+    margin: 0 auto;
+    position: absolute;
+    width: 80%;
+
+}
+
+div.slide > img {
+    box-shadow: 0px 0px 4px #ccc;
+    width: 100%;
+    height: auto;
+
+}
+
+
+div.slide:nth-child(1) {
+  animation: fader 32s 24s infinite;
+}
+div.slide:nth-child(2) {
+  animation: fader 32s 16s infinite;
+}
+div.slide:nth-child(3) {
+  animation: fader 32s 8s infinite;
+}
+div.slide:nth-child(4) {
+  animation: fader 32s 0s infinite;
+}
+
+@keyframes fader{
+  10%{ opacity: 1;}
+  15% { opacity: 1;}
+  40%{ opacity: 0;}
+  60% { opacity: 0;}
+  98% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+
+.card_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 78%;
+    margin: 2% auto;
+    padding-left: 2%;
+    align-content: space-between;
+}
+
+.card_item {
+    width: 18%;
+    height: auto;
+    margin: .5% 20px .5% 0;
+}
+
+.card_top {
+    height: 40%;
+    background-color: rgb(252, 204, 116);
+    width: 94%;
+    border-bottom: 1px dashed #000;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.card_bottom {
+    height: 40%;
+    width: 94%;
+    border-bottom: 1px dashed #000;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+
+.card_button {
+    height: 10%;
+    width: 94%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+div.card_top > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+div.card_bottom > h2 {
+    font-size: 1em;
+    color: maroon;
+    text-align: justify;
+}
+
+div.card_bottom > h3 {
+    font-size: .75em;
+    color: maroon;
+    text-align: left;
+}
+
+div.card_bottom > h4 {
+    font-size: .5em;
+    color:#000;
+    text-align: justify;
+}
+
+div.card_button > button {
+    padding: 8px 8px;
+    background-color: maroon;
+    color: #ccc;
+    margin-left: 20%;
+    height: 100%;
+    width: 50%;
+}
+
+.card_two {
+    border: 2px solid #000;
+    width: 28%;
+    min-height: 350px;
+    margin: 5% auto;
+
+}
+.card_two_top {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.card_two_bottom {
+    background-color: rgb(223, 60, 60);
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+div.card_two_bottom > h2 {
+    font-family: Arial;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgb(136, 6, 6);
+    margin: .5% auto;
+}
+
+.card_two_bg {
+    background-color: rgb(223, 60, 60);  
+}
+
+.box_two_banner {
+    color: rgb(136, 6, 6);  
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer {
+    height: 557px; 
+    width: 100%;
+    margin: none;
+    padding: none;
+    background-image: url('../images/footer_h_bg.PNG');
+    background-repeat: repeat-x;
+}
+
+.footer_img {
+    width: 100%;
+    height: auto;
+}
+
+.accordion {
+    width: 80%;
+    border: 1px solid #000;
+    margin: 3% auto;
+}
+
+#accordion > h3 {
+    background-color:  rgb(136, 6, 6) !important;
+    color: #fff;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+
+.contact_form {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 1% 20px;
+    margin: 1% auto;
+}
+
+.form_stuff:focus {
+    border-color: rgb(136, 6, 6);
+    box-shadow: 0 0 3px rgb(136, 6, 6);
+}
+
+table{ 
+    background-color: rgb(204, 73, 73);
+    width: 80%;
+    margin: 3% auto;
+}
+
+td{
+    border: 1px solid #000;
+    background-color:rgba(136, 6, 6, .5);
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+table.video_table {
+    height: 350px;
+    width: 350px;
+}
+
+
+/* ------------------- MEDIA QUERIES BELOW --------------*/
+
+
+@media screen and (max-width: 1024px) {
+
+
+    div.logo {
+        width: 46%;
+        min-height: 120px;
+    }
+
+    div.banner_titles {
+        display: none;
+    }
+
+    div.banner_search {
+        width: 46%;
+    }
+
+    div.carousel {
+        min-height: 330px;
+    }
+
+    .card_item {
+        width: 30%;
+        height: auto;
+        margin: .5% 20px .5% 0;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    #mobile_menu {
+        display: block;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    div.carousel {
+        min-height: 180px;
+    }
+
+    .card_item {
+        width: 70%;
+        height: auto;
+        margin: .5% auto .5% auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

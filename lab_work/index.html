@@ -1,0 +1,188 @@
+<!doctype HTML>
+<html lang="en-US">
+    <head> <!-- Starts the head section -->
+        <title>Best Hardware</title>
+
+        
+        <!-- These are my CSS Docs -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
+        <link href="styles/slicknav.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        
+        <!-- These are JS Libraries for dynamic content -- yay me -->
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="description" content="We sell the best damned hardware you can find.">
+        <meta name="keywords" content="hardware, tools, saws, hammers">
+        <meta name="author" content="Mark W Bromwich">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+   
+        <script>
+            $( function() {
+              $( "#accordion" ).accordion();
+            } );
+        </script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+    <body>
+        <header class="flex-container">
+            <div class="logo">
+                &nbsp;
+            </div>
+            <div class="banner_titles">
+               <h1>The Best Hardware</h1>
+               <hr>
+               <h3>Where people come to get the best damned hardware</h3>
+            </div>
+            <div class="banner_search">
+                <input type="text" name="search" placeholder="Search">
+                <input type="submit" name="submit" value="S">
+            </div>
+        </header>
+        <nav id="mobile_menu"></nav>
+        <nav class="flex-container nav_menu">
+            <div id="nav_menu" class="main_nav">
+                <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="#2">Lumber</a>
+    <ul>
+        <li><a href="#a">Plywood</a></li>
+        <li><a href="#b">Decking</a></li>
+        <li><a href="#c">Flooring</a></li>
+        <li><a href="#d">Trees <- DIY</a></li>
+    </ul>
+</li>
+<li><a href="#3">Tools</a></li>
+<li><a href="#4">Garden</a>
+    <ul>
+        <li><a href="#a">Flowers</a></li>
+        <li><a href="#b">Plants</a></li>
+        <li><a href="#c">Soil</a></li>
+        <li><a href="#d">Growhouse Ops</a></li>
+    </ul>
+</li>
+    <li><a href="about_us.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+            </div>
+        </nav>
+        <main>
+            <div class="flex-container">
+                <div class="carousel">
+                    <div class="slide">
+                        <img src="images/slide_1.png" alt="This is a hardware banner">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide_2.png" alt="This is a hardware banner">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide_3.png" alt="This is a hardware banner">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide_4.png" alt="This is a hardware banner">
+                    </div>
+                </div> 
+            </div>
+<!-- these are the product cards start - Dont move div -->
+            <div class="card_row"> 
+                <script type="text/JavaScript" src="js/product_data.js"></script>
+            </div> <!-- This ends the row -->
+<!--these are the product cards end -->
+            <h2 class="box_two_banner">Deals for Home Builders</h2>            
+            <div class="card_row">
+                <!-- card one-->
+                <div class="card_two card_two_bg">
+                <div class="card_two_top" style="background-image: url('images/house_1.PNG');">
+                        &nbsp;
+                    </div>
+                     <div class="card_two_bottom">
+                        <h2>Shop Siding</h2>
+                    </div>
+                </div>
+                <!-- card two -->
+                <div class="card_two card_two_bg">
+                    <div class="card_two_top" style="background-image: url('images/house_two.PNG');">
+                        &nbsp;
+                    </div>
+                    <div class="card_two_bottom">
+                        <h2>Shop Windows</h2>
+                    </div>
+                </div>
+                <!-- card three -->
+                <div class="card_two card_two_bg">
+                    <div class="card_two_top" style="background-image: url('images/house_three.PNG');">
+                        &nbsp;
+                    </div>
+                        <div class="card_two_bottom">
+                        <h2>Shop Roofing</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Accordian is below this -->
+            <div class="accordion">
+            <div id="accordion">
+                <h3>Section 1</h3>
+                <div>
+                  <p>
+                  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                  </p>
+                </div>
+                <h3>Section 2</h3>
+                <div>
+                  <p>
+                  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                  purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                  velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                  suscipit faucibus urna.
+                  </p>
+                </div>
+                <h3>Section 3</h3>
+                <div>
+                  <p>
+                  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                  ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                  </p>
+                  <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                  </ul>
+                </div>
+                <h3>Section 4</h3>
+                <div>
+                  <p>
+                  Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                  mauris vel est.
+                  </p>
+                  <p>
+                  Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos.
+                  </p>
+                </div>
+              </div></div>
+            <!-- Accordian is above this -->
+            </main>
+                <footer>
+<img src="images/footer.PNG" alt="this is the footer" class="footer_img">
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
